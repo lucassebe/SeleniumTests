@@ -1,18 +1,12 @@
-## Getting Started
+## **Seja Bem-Vindo!**
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esse repositório terá alguns exemplos de testes utilizando Selenium/JAVA.  💻 🔎
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+** Utilizando o VS Code: 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Para utilizar o VS Code como utilizei você pode realizar esse tutorial: 
+https://funnelgarden.com/setup-selenium-with-java-on-visual-studio-code/ 
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+💡 Caso tenha alguma dúvida ou dica pode falar comigo! =)  
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
