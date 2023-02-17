@@ -2,19 +2,16 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 /***
  * Tests login feature
  */
-
 public class FirstTest {
-    @Test
+@Test
     public void loginvalido() {
         // Visitar o site, configurações iniciais.
-        System.setProperty("webdriver.chrome.driver",
-                "C:/Users/Lucas Sebe/Desktop/projetos/seleniumtests/drivers/chromedriver.exe");
-        WebDriver browser = new ChromeDriver();
+        WebDriver browser = BrowserFactory.getBrowser("Chrome");
         browser.navigate().to("https://authenticationtest.com/");
         // Clicar no botão de Login
         browser.findElement(By.cssSelector(
