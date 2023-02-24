@@ -17,27 +17,29 @@ public class BrowserFactory {
         WebDriver driver = null;
 
         switch (browserName) {
-            // case "Firefox":
-            //     driver = drivers.get("Firefox");
-            //     if (driver == null) {
-            //         driver = new FirefoxDriver();
-            //         drivers.put("Firefox", driver);
-            //     }
-            //     break;
+            case "Firefox":
+                driver = drivers.get("Firefox");
+                if (driver == null) {
+                    System.setProperty("webdriver.firefox.driver",
+                            "C:/Users/Lucas Sebe/Desktop/projetos/seleniumtests/drivers/firefoxdriver.exe");
+                    driver = new FirefoxDriver();
+                    drivers.put("Firefox", driver);
+                }
+                break;
             // case "IE":
-            //     driver = drivers.get("IE");
-            //     if (driver == null) {
-            //         System.setProperty("webdriver.ie.driver",
-            //                 "C:\\Users\\abc\\Desktop\\Server\\IEDriverServer.exe");
-            //         driver = new InternetExplorerDriver();
-            //         drivers.put("IE", driver);
-            //     }
-            //     break;
+            // driver = drivers.get("IE");
+            // if (driver == null) {
+            // System.setProperty("webdriver.ie.driver",
+            // "C:\\Users\\abc\\Desktop\\Server\\IEDriverServer.exe");
+            // driver = new InternetExplorerDriver();
+            // drivers.put("IE", driver);
+            // }
+            // break;
             case "Chrome":
                 driver = drivers.get("Chrome");
                 if (driver == null) {
                     System.setProperty("webdriver.chrome.driver",
-                    "C:/Users/Lucas Sebe/Desktop/projetos/seleniumtests/drivers/chromedriver.exe");
+                            "C:/Users/Lucas Sebe/Desktop/projetos/seleniumtests/drivers/chromedriver.exe");
                     driver = new ChromeDriver();
                     drivers.put("Chrome", driver);
                 }
