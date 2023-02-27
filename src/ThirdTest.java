@@ -16,18 +16,18 @@ public class ThirdTest {
 
             case "Who did you take to the prom?":
                 driver.findElement(By.cssSelector("#answer")).sendKeys("Nobody");
-                driver.findElement(By.cssSelector("input[value='Log In']")).click();
+                driver.findElement(By.cssSelector("input[value='Log In']")).submit();
                 driver.close();
                 break;
 
             case "What make was your first car?":
                 driver.findElement(By.cssSelector("#answer")).sendKeys("Bentley");
-                driver.findElement(By.cssSelector("input[value='Log In']")).click();
+                driver.findElement(By.cssSelector("input[value='Log In']")).submit();
                 driver.close();
                 break;
             case "What city were you born in?":
                 driver.findElement(By.cssSelector("#answer")).sendKeys("Chicago");
-                driver.findElement(By.cssSelector("input[value='Log In']")).click();
+                driver.findElement(By.cssSelector("input[value='Log In']")).submit();
                 driver.close();
                 break;
         }

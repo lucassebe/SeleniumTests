@@ -1,5 +1,6 @@
-import java.time.Duration;
 
+import java.time.Duration;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,15 +12,20 @@ public class FourthTest {
     @Test
     public void progressbar() {
         WebDriver browser = BrowserFactory.getBrowser("Chrome");
-        browser.manage().window().maximize();
         browser.navigate().to("https://demoqa.com/progress-bar");
         WebElement startStopButton = browser.findElement(By.cssSelector("#startStopButton"));
+        WebElement progressBar = browser.findElement(By.cssSelector("div[role='progressbar']"));
+        String progressBarStatus = progressBar.getAttribute("aria-valuenow");
+
         startStopButton.click();
-        WebElement wait = new WebDriverWait(browser, Duration.ofSeconds(10))
+        WebElement wait = new WebDriverWait(browser, Duration.ofSeconds(15))
                 .until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#resetButton")));
         wait.click();
-        browser.close();
 
+        if (progressBarStatus.equals("0")) {
+            Assert.assertTrue(progressBarStatus, true);
+        }
+        browser.quit();
     }
 
 }

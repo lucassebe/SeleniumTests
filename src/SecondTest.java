@@ -24,7 +24,7 @@ public class SecondTest {
         // Marcar o checkbox
         browser.findElement(By.id("loveForm")).click();
         // Clicar no botão de fazer Login.
-        browser.findElement(By.cssSelector("input[value='Log In']")).click();
+        browser.findElement(By.cssSelector("input[value='Log In']")).submit();
 
         // Verificar a existência do texto no Código Fonte.
         boolean sucessMessage = browser.getPageSource().contains(" You are now logged in!");
