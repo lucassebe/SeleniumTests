@@ -9,7 +9,7 @@ import org.junit.Assert;
  * Tests login feature
  */
 
-public class SecondTest {
+public class BasicAuthTest {
     @Test
     public void loginvalido2() {
         // Visitar o site, configurações iniciais.

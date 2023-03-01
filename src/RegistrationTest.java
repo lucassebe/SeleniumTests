@@ -9,10 +9,10 @@ import org.openqa.selenium.WebElement;
 
 import com.github.javafaker.Faker;
 
-public class FifthTest {
+public class RegistrationTest {
     @Test
     public void createNewuser() {
-        
+
         // Faker options
         Faker faker = new Faker(new Locale("pt-BR"));
         String firstName = faker.name().firstName();

@@ -2,7 +2,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ThirdTest {
+public class AuthSecurityQuestionChallenge {
     @Test
     public void securityQuestionChallenge() {
         WebDriver driver = BrowserFactory.getBrowser("Firefox");
