@@ -110,4 +110,7 @@ public class GroceryCRUDPage {
         wait.until(ExpectedConditions.visibilityOf(sucessAssert));
         return sucessAssert.getText().toString().contains("Your data has been successfully stored into the database.");
     }
+    public void quit(){
+        browser.quit();
+    }
 }

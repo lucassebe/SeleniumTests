@@ -23,7 +23,7 @@ public class GroceryCRUDTest {
         groceryCRUD.enterCountry();
         groceryCRUD.submitButton();
         assertTrue(groceryCRUD.sucessfullRegister());
-
+        groceryCRUD.quit();
     }
 
 }
