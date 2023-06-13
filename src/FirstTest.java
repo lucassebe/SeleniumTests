@@ -2,6 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 /***
@@ -11,7 +12,7 @@ public class FirstTest {
 @Test
     public void loginvalido() {
         // Visitar o site, configurações iniciais.
-        WebDriver browser = BrowserFactory.getBrowser("Chrome");
+        WebDriver browser = new ChromeDriver();
         browser.navigate().to("https://authenticationtest.com/");
         // Clicar no botão de Login
         browser.findElement(By.cssSelector(

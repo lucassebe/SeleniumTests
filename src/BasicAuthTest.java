@@ -1,6 +1,7 @@
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import static org.junit.Assert.assertTrue;
 import org.junit.Assert;
@@ -13,7 +14,7 @@ public class BasicAuthTest {
     @Test
     public void loginvalido2() {
         // Visitar o site, configurações iniciais.
-        WebDriver browser = BrowserFactory.getBrowser("Chrome");
+        WebDriver browser = new ChromeDriver();
         browser.navigate().to("https://authenticationtest.com/complexAuth/");
         // Preencher os dados com as informações.
         browser.findElement(By.id("email")).sendKeys("complex@authenticationtest.com");

@@ -5,13 +5,14 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ProgressbarTest {
     @Test
     public void progressbar() {
-        WebDriver browser = BrowserFactory.getBrowser("Chrome");
+        WebDriver browser = new ChromeDriver();
         browser.navigate().to("https://demoqa.com/progress-bar");
         WebElement startStopButton = browser.findElement(By.cssSelector("#startStopButton"));
         WebElement progressBar = browser.findElement(By.cssSelector("div[role='progressbar']"));

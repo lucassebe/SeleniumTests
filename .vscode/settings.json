@@ -83,6 +83,7 @@
         "c:\\Users\\Lucas Sebe\\Downloads\\selenium-java-4.8.0\\lib\\opentelemetry-sdk-trace-1.22.0.jar",
         "c:\\Users\\Lucas Sebe\\Downloads\\selenium-java-4.8.0\\lib\\opentelemetry-semconv-1.22.0-alpha.jar",
         "c:\\Users\\Lucas Sebe\\Downloads\\selenium-java-4.8.0\\lib\\reactive-streams-1.0.4.jar",
-        "c:\\Users\\Lucas Sebe\\Downloads\\selenium-java-4.8.0\\lib\\slf4j-api-2.0.6.jar"
+        "c:\\Users\\Lucas Sebe\\Downloads\\selenium-java-4.8.0\\lib\\slf4j-api-2.0.6.jar",
+        "c:\\Users\\Visitante\\Downloads\\selenium-java-4.10.0/**/*.jar"
     ]
 }

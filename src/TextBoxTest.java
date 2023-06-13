@@ -2,11 +2,12 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TextBoxTest {
     @Test
     public void textBoxTest() {
-        WebDriver browser = BrowserFactory.getBrowser("Chrome");
+        WebDriver browser = new ChromeDriver();
         // browser.manage().window().maximize();
         TextBoxPO textBox = new TextBoxPO(browser);
         textBox.visit();

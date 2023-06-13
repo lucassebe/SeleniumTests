@@ -1,11 +1,12 @@
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AuthSecurityQuestionChallenge {
     @Test
     public void securityQuestionChallenge() {
-        WebDriver driver = BrowserFactory.getBrowser("Firefox");
+        WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://authenticationtest.com/questionChallenge/");
         driver.findElement(By.cssSelector("#email")).sendKeys("question@authenticationtest.com");
         driver.findElement(By.cssSelector("#password")).sendKeys("pa$$w0rd");

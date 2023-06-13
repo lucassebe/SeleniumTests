@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.github.javafaker.Faker;
 
@@ -22,7 +23,7 @@ public class RegistrationTest {
         String cellphone = ("+55" + faker.phoneNumber().cellPhone());
 
         // Chrome Options
-        WebDriver driver = BrowserFactory.getBrowser("Chrome");
+        WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
         // Coding....
